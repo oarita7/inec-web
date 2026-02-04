@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="INEC | Proyectos eléctricos, sistemas fotovoltaicos, estudios técnicos y mantenimiento en Honduras." />
+  <title>INEC | Ingeniería Eléctrica y Fotovoltaica</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#e9eefc;
+      --muted:#b7c3e6;
+      --accent:#f59e0b;
+      --accent2:#111827;
+      --border:rgba(255,255,255,.12);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1060px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: var(--bg);
+      line-height:1.35;
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    .top{display:flex; align-items:center; justify-content:space-between; gap:14px}
+    .brand{display:flex; align-items:center; gap:14px; text-decoration:none}
+    .brand img{height:56px}
+    .brand h1{margin:0; font-size:18px}
+    .brand p{margin:2px 0 0; font-size:13px; color:var(--muted)}
+    .btns{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{padding:10px 14px; border-radius:999px; border:1px solid var(--border); background:#111827; color:#fff; text-decoration:none; font-weight:600}
+    .btn.primary{background:var(--accent); color:#000}
+    .hero{margin-top:22px; display:grid; grid-template-columns:1.1fr .9fr; gap:18px}
+    .card{border:1px solid var(--border); background:#111827; border-radius:var(--radius); padding:22px}
+    h2{font-size:36px; margin:0 0 12px}
+    .lead{color:var(--muted); max-width:60ch}
+    .grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:18px}
+    .service{border:1px solid var(--border); border-radius:16px; padding:16px}
+    footer{margin-top:30px; text-align:center; font-size:12px; color:var(--muted)}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:500px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#">
+        <img src="logo-inec.png" alt="INEC Logo" />
+        <div>
+          <h1>INEC</h1>
+          <p>Ingenieros Electromecánicos y Constructores</p>
+        </div>
+      </a>
+      <div class="btns">
+        <a class="btn primary" href="https://wa.me/50432763709" target="_blank">WhatsApp</a>
+        <a class="btn" href="mailto:oscararita.pro@gmail.com">Correo</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Soluciones eléctricas y fotovoltaicas confiables</h2>
+        <p class="lead">INEC brinda servicios de ingeniería eléctrica, sistemas fotovoltaicos, estudios técnicos y mantenimiento. Atendemos San Pedro Sula y otras zonas de Honduras según requerimiento del proyecto.</p>
+      </div>
+      <div class="card">
+        <h3>Servicios</h3>
+        <ul class="lead">
+          <li>Proyectos eléctricos</li>
+          <li>Sistemas fotovoltaicos</li>
+          <li>Estudios técnicos</li>
+          <li>Mantenimiento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="service">Proyectos eléctricos</div>
+      <div class="service">Sistemas fotovoltaicos</div>
+      <div class="service">Estudios técnicos</div>
+      <div class="service">Mantenimiento</div>
+    </section>
+
+    <footer>
+      © INEC · San Pedro Sula, Honduras · Atención nacional según proyecto
+    </footer>
+  </div>
+</body>
+</html>
